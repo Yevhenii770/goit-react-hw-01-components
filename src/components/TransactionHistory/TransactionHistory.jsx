@@ -15,9 +15,9 @@ export default function TransactionHistory({ items }) {
       <tbody>
         {items.map((item, index) => (
           <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+            <td className={css.capitilize}>{item.type}</td>
+            <td className={css.capitilize}>{item.amount}</td>
+            <td className={css.capitilize}>{item.currency}</td>
           </tr>
         ))}
       </tbody>
