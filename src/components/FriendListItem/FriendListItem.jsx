@@ -6,7 +6,7 @@ export default function FriendListItem({friends}) {
    { 
         friends.map(friend => (
             < li key={friend.id} className={css.item}>
-                <span className=""></span>
+                <span className={friend.isOnline ? css.online : css.offline}></span>
                 <img className="avatar" src={friend.avatar} alt="alt" width="48" />
                 <p className="">{friend.name}</p>
             </li>
