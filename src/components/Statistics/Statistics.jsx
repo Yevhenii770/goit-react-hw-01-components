@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import css from '../Statistics/Statistics.module.css'
+import css from './Statistics.module.css'
 
  export default function Statistics({stats}) {
- return <section className={css.section}>
+ return <section className={css.statistics}>
   <h2 className={css.title}>Upload stats</h2>
 
      <ul className={css.statList}>

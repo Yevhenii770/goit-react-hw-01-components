@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-.stats li {
+.li {
     width: 33%;
     display: flex;
     flex-direction: column;
