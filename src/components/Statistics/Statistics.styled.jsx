@@ -1,4 +1,6 @@
-/* .statistics {
+import styled from "@emotion/styled";
+
+export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,32 +9,32 @@
     border: 1px solid gray;
     border-radius: 5px;
     box-shadow: -5px 6px 8px -2px rgb(200 200 200 / 75%);
-} */
+`;
 
-/* .title {
+export const Title = styled.h2`
     font-size: 1.4rem;
     color: rgb(0, 0, 0);
     display: flex;
     position: absolute;
     top: 40%;
     left: 36%;
-} */
-/* .title__div {
+`;
+
+export const DivTitle = styled.h2`
     position: relative;
     width: 100%;
     height: 100px;
+`;
 
-} */
-
-/* .statList {
+export const StatList = styled.ul`
     display: flex;
     list-style: none;
     justify-content: center;
     width: 100%;
     border-radius: 20px;
-} */
+    `;
 
-/* .item {
+export const Item = styled.li`
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -40,37 +42,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    
-}  */
-.item:first-child {
-    border-bottom-left-radius: 3px;
-}
-.item:last-child {
-    border-bottom-right-radius: 3px;
-}
+    `;
 
-.id-1{
-    background-color: red;
-}
-.id-2 {
-    background-color: green;
-}
-.id-3 {
-    background-color: blue;
-}
-.id-4 {
-    background-color: pink;
-}
-.id-5 {
-    background-color: yellow;
-}
-
-/* .label {
+export const Label = styled.span`
     color: white;
     filter: drop-shadow(0 0 2px black);
-} */
+    `;
 
-/* .percentage {
+export const Percentage = styled.span`
     color: white;
     filter: drop-shadow(0 0 2px black);
-} */
+    `;
+
