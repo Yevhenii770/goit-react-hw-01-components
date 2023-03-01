@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
 
 export default function Statistics({ stats, title }) {
- 
   return <section className={css.statistics}>
 
     <div className={css.title__div}>
-      <h2 className={css.title}>{title}</h2>
+      {title && <h2 className={css.title}>{title}</h2>}
     </div>
 
      <ul className={css.statList}>
