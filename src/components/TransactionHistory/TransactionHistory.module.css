@@ -4,7 +4,7 @@ table {
 }
 
 thead {
-    background-color: rgb(75, 214, 249);
+    background-color: rgb(149, 206, 219);
     border: none;
     height: 40px;
 }
@@ -15,7 +15,7 @@ td {
 }
 
 tbody tr:nth-child(2n+1) {
-    background-color: rgb(218, 252, 255);
+    background-color: rgb(131, 143, 145);
 }
 
 .capitilize {

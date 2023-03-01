@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: rgba(185, 182, 206, 0.786);
+    background-color: rgb(149, 206, 219);
     border: 1px solid grey;
 }
 .li:first-child,

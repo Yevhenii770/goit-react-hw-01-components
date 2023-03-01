@@ -43,21 +43,9 @@ export const Item = styled.li`
     padding-bottom: 10px;
     align-items: center;
 
-    background-color: red
+    background-color: 
     ${props => {
-    // if (props = "id-1") {
-    //     return "red"
-    // } if (props = "id-2") {
-    //     return "green"
-    // } if (props = "id-3") {
-    //     return "blue"
-    // } if (props = "id-4") {
-    //     return "pink"
-    // } if (props = "id-5") {
-    //     return "yellow"
-    // } else {
-    //      return "black"
-    //     }
+        return getRandomHexColor();
     }};`;
 
 export const Label = styled.span`
@@ -70,3 +58,8 @@ export const Percentage = styled.span`
     filter: drop-shadow(0 0 2px black);
     `;
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}

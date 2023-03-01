@@ -8,12 +8,13 @@ export default function Statistics({ stats, title }) {
       {title && <Title>{title}</Title>}
     </DivTitle>
 
-     <StatList>
-      {stats.map(({ id, label, percentage }) => (
+    <StatList>
+      
+      {stats.map(({id, label, percentage}) => (
         <Item key={id}>
-            <Label>{label}</Label>
-            <Percentage>{percentage} %</Percentage>
-          </Item>))}
+          <Label>{label}</Label>
+          <Percentage>{percentage} %</Percentage>
+        </Item>))}
   </StatList>
 </Section>
 }
