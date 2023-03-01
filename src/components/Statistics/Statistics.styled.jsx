@@ -44,7 +44,7 @@ export const Item = styled.li`
     align-items: center;
 
     background-color: 
-    ${props => getRandomHexColor()};`;
+    ${props => palitraColor(props.color)};`;
 
 export const Label = styled.span`
     color: white;
@@ -56,8 +56,23 @@ export const Percentage = styled.span`
     filter: drop-shadow(0 0 2px black);
     `;
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
+
+
+
+
+function palitraColor(color) {
+
+    if(color === ".docx") {
+            return `#007FFF`
+    } if(color === ".pdf") {
+            return `#007BA7`
+    } if(color === ".mp3") {
+            return `#CCCCFF`
+    } if(color === ".psd") {
+            return `#003366`
+    } if(color === ".pdf") {
+            return `#007FFF`
+    } else {
+        return `white`
+    }
 }

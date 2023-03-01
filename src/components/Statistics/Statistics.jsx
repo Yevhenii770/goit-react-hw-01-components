@@ -11,10 +11,10 @@ export default function Statistics({ stats, title }) {
 
     <StatList>
       
-      {stats.map((stats) => (
-        <Item key={stats.id} >
-          <Label>{stats.label}</Label>
-          <Percentage>{stats.percentage} %</Percentage>
+      {stats.map(({id, label, percentage}) => (
+        <Item key={id} color={label}>
+          <Label>{label}</Label>
+          <Percentage>{percentage} %</Percentage>
         </Item>))}
   </StatList>
 </Section>
