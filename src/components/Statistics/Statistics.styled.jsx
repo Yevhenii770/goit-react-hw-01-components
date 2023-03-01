@@ -20,7 +20,7 @@ export const Title = styled.h2`
     left: 36%;
 `;
 
-export const DivTitle = styled.h2`
+export const DivTitle = styled.div`
     position: relative;
     width: 100%;
     height: 100px;
@@ -42,22 +42,23 @@ export const Item = styled.li`
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    background-color: ${props => {
-    if (props.id = "id-1") {
-        return "red"
-    } if (props.id = "id-2") {
-        return "green"
-    } if (props.id = "id-3") {
-        return "blue"
-    } if (props.id = "id-4") {
-        return "pink"
-    } if (props.id = "id-5") {
-        return "yellow"
-    } else {
-         return "black"
-        }
-    }} ;
-    `;
+
+    background-color: red
+    ${props => {
+    // if (props = "id-1") {
+    //     return "red"
+    // } if (props = "id-2") {
+    //     return "green"
+    // } if (props = "id-3") {
+    //     return "blue"
+    // } if (props = "id-4") {
+    //     return "pink"
+    // } if (props = "id-5") {
+    //     return "yellow"
+    // } else {
+    //      return "black"
+    //     }
+    }};`;
 
 export const Label = styled.span`
     color: white;

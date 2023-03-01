@@ -9,8 +9,8 @@ export default function Statistics({ stats, title }) {
     </DivTitle>
 
      <StatList>
-         {stats.map(({id, label, percentage}) => (
-          <Item key={id} >
+      {stats.map(({ id, label, percentage }) => (
+        <Item key={id}>
             <Label>{label}</Label>
             <Percentage>{percentage} %</Percentage>
           </Item>))}
