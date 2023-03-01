@@ -2,6 +2,7 @@ import { Section, Title, DivTitle, StatList, Item, Label, Percentage } from './S
 import PropTypes from 'prop-types';
 
 export default function Statistics({ stats, title }) {
+  console.log(stats)
   return <Section>
 
     <DivTitle>
@@ -10,10 +11,10 @@ export default function Statistics({ stats, title }) {
 
     <StatList>
       
-      {stats.map(({id, label, percentage}) => (
-        <Item key={id}>
-          <Label>{label}</Label>
-          <Percentage>{percentage} %</Percentage>
+      {stats.map((stats) => (
+        <Item key={stats.id} >
+          <Label>{stats.label}</Label>
+          <Percentage>{stats.percentage} %</Percentage>
         </Item>))}
   </StatList>
 </Section>

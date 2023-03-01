@@ -44,9 +44,7 @@ export const Item = styled.li`
     align-items: center;
 
     background-color: 
-    ${props => {
-        return getRandomHexColor();
-    }};`;
+    ${props => getRandomHexColor()};`;
 
 export const Label = styled.span`
     color: white;
