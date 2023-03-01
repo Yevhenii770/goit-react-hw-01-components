@@ -42,6 +42,21 @@ export const Item = styled.li`
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
+    background-color: ${props => {
+    if (props.id = "id-1") {
+        return "red"
+    } if (props.id = "id-2") {
+        return "green"
+    } if (props.id = "id-3") {
+        return "blue"
+    } if (props.id = "id-4") {
+        return "pink"
+    } if (props.id = "id-5") {
+        return "yellow"
+    } else {
+         return "black"
+        }
+    }} ;
     `;
 
 export const Label = styled.span`
