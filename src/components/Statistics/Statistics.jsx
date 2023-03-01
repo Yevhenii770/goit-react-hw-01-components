@@ -1,6 +1,5 @@
+import { Section, Title, DivTitle, StatList, Item, Label, Percentage } from './Statistics.styled'
 import PropTypes from 'prop-types';
-// import css from './Statistics.module.css'
-import {Section, Title, DivTitle, StatList, Item, Label, Percentage} from './Statistics.styled'
 
 export default function Statistics({ stats, title }) {
   return <Section>
